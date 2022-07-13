@@ -8,6 +8,10 @@
 
     <PropertyGroup>
         <TargetFrameworks>net6.0</TargetFrameworks>
+        <Authors>Angelo Pirola</Authors>
+        <Company>Gestione Sagre</Company>
+        <Product>Gestione Sagre Email</Product>
+        <Title>Gestione Sagre Email</Title>
         <Description>GestioneSagre Email components</Description>
         <PackageTags>gestione sagre email csharp net netcore web opensource</PackageTags>
         <PackageIcon>Library.png</PackageIcon>
