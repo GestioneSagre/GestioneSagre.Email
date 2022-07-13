@@ -32,8 +32,8 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="GestioneSagre.Models" Version="1.0.6" />
-        <PackageReference Include="GestioneSagre.Tools" Version="1.0.1" />
+        <PackageReference Include="GestioneSagre.Models" Version="1.0.7" />
+        <PackageReference Include="GestioneSagre.Tools" Version="1.0.3" />
         <PackageReference Include="MailKit" Version="3.3.0" />
         <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.1" />
         <PackageReference Include="Microsoft.Extensions.Options" Version="6.0.0" />
