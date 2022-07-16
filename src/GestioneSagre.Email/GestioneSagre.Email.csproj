@@ -32,7 +32,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="GestioneSagre.BaseLibrary" Version="1.0.7" />
+        <PackageReference Include="GestioneSagre.BaseLibrary" Version="1.0.13" />
         <PackageReference Include="GestioneSagre.Models" Version="1.0.9" />
         <PackageReference Include="GestioneSagre.ThirdPartyLibraries" Version="1.0.4" />
         <PackageReference Include="GestioneSagre.Tools" Version="1.0.6" />
