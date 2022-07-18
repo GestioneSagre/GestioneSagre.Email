@@ -19,11 +19,11 @@ public class MailKitEmailSender : IEmailSenderService
         this.smtpOptionsMonitor = smtpOptionsMonitor;
     }
 
-    public async Task SendEmailAsync(InputMailSender model)
+    public async Task SendEmailSupportoAsync(InputMailSupportoSender model, InputMailOptionSender optionSender)
     {
         try
         {
-            var options = this.smtpOptionsMonitor.CurrentValue;
+            var options = optionSender;
 
             using SmtpClient client = new();
 
@@ -37,8 +37,8 @@ public class MailKitEmailSender : IEmailSenderService
             MimeMessage message = new();
 
             message.From.Add(MailboxAddress.Parse($"{model.MittenteNominativo} <{model.MittenteEmail}>"));
-            message.To.Add(MailboxAddress.Parse($"{model.DestinatarioNominativo} <{model.DestinatarioEmail}>"));
-            message.Subject = model.Oggetto;
+            message.To.Add(MailboxAddress.Parse($"{options.DestinatarioNominativo} <{options.DestinatarioEmail}>"));
+            message.Subject = options.Oggetto;
 
             var builder = new BodyBuilder();
 
